@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var usuarioTextField: UITextField!
     @IBOutlet weak var contrasenaTextField: UITextField!
     
+    
     @IBAction func botonUnoClick(_ sender: Any) {
         let alert = UIAlertController(
                     title: "¡Alerta!",

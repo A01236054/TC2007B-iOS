@@ -31,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="botonUnoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMl-Mg-Wcx"/>
+                                    <action selector="botonUnoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Yh-qT-yqf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplicación para debuggear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0c-hY-qTa" userLabel="Titulo Label">
@@ -80,10 +80,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="botonUnoClick" destination="cqK-yA-fV5" id="sRj-kR-v4b"/>
-                        <outlet property="contrasenaTextField" destination="2U0-nl-A7r" id="60Q-Rd-TUy"/>
+                        <outlet property="contrasenaTextField" destination="2U0-nl-A7r" id="ozc-cp-qAk"/>
                         <outlet property="tituloLabel" destination="Z0c-hY-qTa" id="nMd-EO-8wP"/>
-                        <outlet property="usuarioTextField" destination="HHL-AW-h9L" id="oJM-1X-F8H"/>
+                        <outlet property="usuarioTextField" destination="HHL-AW-h9L" id="skI-er-Axa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
