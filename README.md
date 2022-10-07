@@ -9,7 +9,7 @@
 ------------------
 Se realizó un proyecto nuevo en el que se introdujeron nombre, matrícula, carrera e información sobre mí, uno en cada label.
 
-<br />**Actividad2 - Aplicación con componentes**
+<br />**Actividad 2 - Aplicación con componentes**
 ------------------
 Se realizó una aplicación que incluye una calculadora de la suma, resta, multiplicación y división de dos números introducidos por el usuario.
 
