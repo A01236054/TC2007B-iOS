@@ -15,114 +15,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var numeroInferior: UITextField!
     
     @IBAction func suma(_ sender: Any) {
-        let numUno = Double(numeroSuperior.text!)
-        let numDos = Double(numeroInferior.text ?? "0")
-        var mensaje = "Favor de completar ambos campos."
-        
-        if (numUno != nil && numDos != nil) {
-            let resultado = (numDos ?? 0) + (numUno ?? 0)
-            mensaje = String(resultado)
-        }
-        
-        
-        let alert = UIAlertController(
-                    title: "¡Suma!",
-                    message: mensaje,
-                    preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(
-            title: "Cerrar",
-            style: UIAlertAction.Style.cancel))
-        
-        self.present(alert, animated: true, completion: nil)
+        MostrarAlerta(titulo: "Suma", mensaje: resultado(sign: +))
     }
-    
+
     @IBAction func resta(_ sender: Any) {
-        let numUno = Double(numeroSuperior.text!)
-        let numDos = Double(numeroInferior.text ?? "0")
-        var mensaje = "Favor de completar ambos campos."
-        
-        if (numUno != nil && numDos != nil) {
-            let resultado = (numUno ?? 0) - (numDos ?? 0)
-            mensaje = String(resultado)
-        }
-        
-        
-        let alert = UIAlertController(
-                    title: "¡Resta!",
-                    message: mensaje,
-                    preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(
-            title: "Cerrar",
-            style: UIAlertAction.Style.cancel))
-        
-        self.present(alert, animated: true, completion: nil)
+        MostrarAlerta(titulo: "Resta", mensaje: resultado(sign: -))
     }
     
     @IBAction func multiplicacion(_ sender: Any) {
-        let numUno = Double(numeroSuperior.text!)
-        let numDos = Double(numeroInferior.text ?? "0")
-        var mensaje = "Favor de completar ambos campos."
-        
-        if (numUno != nil && numDos != nil) {
-            let resultado = (numDos ?? 0) * (numUno ?? 0)
-            mensaje = String(resultado)
-        }
-        
-        
-        let alert = UIAlertController(
-                    title: "¡Multiplicación!",
-                    message: mensaje,
-                    preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(
-            title: "Cerrar",
-            style: UIAlertAction.Style.cancel))
-        
-        self.present(alert, animated: true, completion: nil)
+        MostrarAlerta(titulo: "Multiplicación", mensaje: resultado(sign: *))
     }
     
     
     @IBAction func division(_ sender: Any) {
-        //let dividendo = numeroInferior.text
-        //let divisor = numeroSuperior.text
-        
-        let numDos = Double(numeroSuperior.text!)
-        let numUno = Double(numeroInferior.text ?? "0")
-        var mensaje = "Favor de completar ambos campos."
-        
-        if (numUno != nil && numDos != nil) {
-            let resultado = (numUno ?? 0) / (numDos ?? 0)
-            mensaje = String(resultado)
-        }
-        
-        
-        let alert = UIAlertController(
-                    title: "¡División!",
-                    message: mensaje,
-                    preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(
-            title: "Cerrar",
-            style: UIAlertAction.Style.cancel))
-        
-        self.present(alert, animated: true, completion: nil)
+        MostrarAlerta(titulo: "División", mensaje: resultado(sign: /))
     }
     
     @IBAction func botonUnoClick(_ sender: Any) {
-        let alert = UIAlertController(
-                    title: "¡Alerta!",
-                    message: usuarioTextField.text,
-                    preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(
-            title: "Cerrar",
-            style: UIAlertAction.Style.cancel))
-        
-        self.present(alert, animated: true, completion: nil)
+        MostrarAlerta(titulo: "Texto en usuario:", mensaje: usuarioTextField.text!)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,6 +42,26 @@ class ViewController: UIViewController {
         tituloLabel.textColor = UIColor(red: 36/255, green: 80/255, blue: 155/255, alpha: 1.0)
     }
 
-
+    func MostrarAlerta(titulo: String, mensaje: String) {
+        let alert = UIAlertController(
+                    title: titulo,
+                    message: mensaje,
+                    preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(
+            title: "Cerrar",
+            style: UIAlertAction.Style.cancel))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func resultado(sign: (Double,Double)->Double) -> String{
+        let numUno = Double(numeroSuperior.text!)
+        let numDos = Double(numeroInferior.text ?? "0")
+        var mensaje = "Favor de completar ambos campos."
+        if (numUno != nil && numDos != nil) {
+            mensaje = String(sign(numUno!, numDos ?? 0))
+        }
+        return mensaje
+    }
 }
 

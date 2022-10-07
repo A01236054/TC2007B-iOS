@@ -13,6 +13,7 @@
 		FB3174DB28E7191F003DD0AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3174D928E7191F003DD0AB /* Main.storyboard */; };
 		FB3174DD28E71921003DD0AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3174DC28E71921003DD0AB /* Assets.xcassets */; };
 		FB3174E028E71921003DD0AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3174DE28E71921003DD0AB /* LaunchScreen.storyboard */; };
+		FB65FFA328F05F31005FAFD9 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB65FFA228F05F31005FAFD9 /* ImagenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FB3174DC28E71921003DD0AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3174DF28E71921003DD0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3174E128E71921003DD0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB65FFA228F05F31005FAFD9 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FB3174DC28E71921003DD0AB /* Assets.xcassets */,
 				FB3174DE28E71921003DD0AB /* LaunchScreen.storyboard */,
 				FB3174E128E71921003DD0AB /* Info.plist */,
+				FB65FFA228F05F31005FAFD9 /* ImagenViewController.swift */,
 			);
 			path = mySecondApp;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3174D828E7191F003DD0AB /* ViewController.swift in Sources */,
+				FB65FFA328F05F31005FAFD9 /* ImagenViewController.swift in Sources */,
 				FB3174D428E7191F003DD0AB /* AppDelegate.swift in Sources */,
 				FB3174D628E7191F003DD0AB /* SceneDelegate.swift in Sources */,
 			);
