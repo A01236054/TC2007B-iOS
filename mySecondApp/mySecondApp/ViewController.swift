@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var numeroSuperior: UITextField!
     @IBOutlet weak var numeroInferior: UITextField!
     
+    @IBAction func navegarAImagen(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let imageViewController = storyBoard.instantiateViewController(withIdentifier:  "ImagenViewController")
+        imageViewController.modalPresentationStyle = .fullScreen
+        self.present(imageViewController, animated: true)
+    }
+    
+    
     @IBAction func suma(_ sender: Any) {
         MostrarAlerta(titulo: "Suma", mensaje: resultado(sign: +))
     }
@@ -38,7 +46,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        tituloLabel.text = "Segunda Aplicación"
+        tituloLabel.text = "Segunda Aplicación: CALCULADORA"
         tituloLabel.textColor = UIColor(red: 36/255, green: 80/255, blue: 155/255, alpha: 1.0)
     }
 
