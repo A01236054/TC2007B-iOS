@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-Ai-NM7">
-                                <rect key="frame" x="16" y="91" width="358" height="353"/>
+                                <rect key="frame" x="16" y="92" width="358" height="352"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCw-XZ-noN">
                                         <rect key="frame" x="8" y="8" width="342" height="152"/>
@@ -57,7 +57,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-RI-XwU">
-                                        <rect key="frame" x="8" y="188" width="342" height="157"/>
+                                        <rect key="frame" x="8" y="188" width="342" height="156"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiA-Q0-Bek">
                                                 <rect key="frame" x="106" y="105" width="132" height="35"/>
@@ -75,14 +75,23 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymi-J3-iT9">
+                                                <rect key="frame" x="8" y="61" width="326" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <constraints>
-                                            <constraint firstItem="xfa-Bu-ZNh" firstAttribute="top" secondItem="m0z-RI-XwU" secondAttribute="topMargin" id="1uX-bv-sGQ"/>
-                                            <constraint firstItem="ZiA-Q0-Bek" firstAttribute="top" secondItem="xfa-Bu-ZNh" secondAttribute="bottom" constant="63" id="9hu-0p-9fg"/>
-                                            <constraint firstItem="ZiA-Q0-Bek" firstAttribute="leading" secondItem="m0z-RI-XwU" secondAttribute="leading" constant="106" id="bN6-hz-g1r"/>
-                                            <constraint firstItem="xfa-Bu-ZNh" firstAttribute="leading" secondItem="m0z-RI-XwU" secondAttribute="leadingMargin" id="osU-Ko-m9M"/>
-                                            <constraint firstItem="xfa-Bu-ZNh" firstAttribute="trailing" secondItem="m0z-RI-XwU" secondAttribute="trailingMargin" id="wD3-dB-W0n"/>
+                                            <constraint firstItem="ymi-J3-iT9" firstAttribute="leading" secondItem="xfa-Bu-ZNh" secondAttribute="leading" id="10c-HA-tgK"/>
+                                            <constraint firstItem="xfa-Bu-ZNh" firstAttribute="top" secondItem="m0z-RI-XwU" secondAttribute="topMargin" id="Ecv-So-zEt"/>
+                                            <constraint firstItem="ZiA-Q0-Bek" firstAttribute="leading" secondItem="m0z-RI-XwU" secondAttribute="leading" constant="106" id="QHS-mU-lEf"/>
+                                            <constraint firstItem="ZiA-Q0-Bek" firstAttribute="top" secondItem="m0z-RI-XwU" secondAttribute="top" constant="105" id="QLJ-IG-JUs"/>
+                                            <constraint firstItem="xfa-Bu-ZNh" firstAttribute="leading" secondItem="m0z-RI-XwU" secondAttribute="leadingMargin" id="aJ7-vm-sn1"/>
+                                            <constraint firstItem="ymi-J3-iT9" firstAttribute="centerY" secondItem="m0z-RI-XwU" secondAttribute="centerY" id="jSf-iK-7qe"/>
+                                            <constraint firstItem="ymi-J3-iT9" firstAttribute="trailing" secondItem="xfa-Bu-ZNh" secondAttribute="trailing" id="pIm-bJ-Oxs"/>
+                                            <constraint firstItem="ZiA-Q0-Bek" firstAttribute="top" secondItem="ymi-J3-iT9" secondAttribute="bottom" constant="10" id="vf5-s2-4Q0"/>
+                                            <constraint firstItem="xfa-Bu-ZNh" firstAttribute="trailing" secondItem="m0z-RI-XwU" secondAttribute="trailingMargin" id="zYH-gP-QUs"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -99,8 +108,14 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Realm App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWh-qi-5aX">
-                                <rect key="frame" x="117" y="47" width="156" height="28"/>
+                                <rect key="frame" x="117" y="47" width="156" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A01236054 - Mauricio Cuadros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMQ-wA-ZmE">
+                                <rect key="frame" x="75" y="478" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -108,7 +123,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jMQ-wA-ZmE" firstAttribute="top" secondItem="OBZ-Ai-NM7" secondAttribute="bottom" constant="34" id="Abb-EW-PB6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OBZ-Ai-NM7" secondAttribute="bottom" constant="366" id="BAv-fj-9OI"/>
+                            <constraint firstItem="jMQ-wA-ZmE" firstAttribute="centerX" secondItem="OBZ-Ai-NM7" secondAttribute="centerX" id="FuA-PB-kHo"/>
                             <constraint firstItem="pWh-qi-5aX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GSP-Nw-47j"/>
                             <constraint firstItem="OBZ-Ai-NM7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rnk-OW-Mrc"/>
                             <constraint firstItem="OBZ-Ai-NM7" firstAttribute="top" secondItem="pWh-qi-5aX" secondAttribute="bottom" constant="16" id="TzN-HF-Jjj"/>
@@ -119,6 +136,7 @@
                     <connections>
                         <outlet property="busquedaTextField" destination="QhB-L2-vzO" id="Fzk-8m-8OB"/>
                         <outlet property="creacionTextField" destination="xfa-Bu-ZNh" id="Wch-yA-nvR"/>
+                        <outlet property="passwordTextField" destination="ymi-J3-iT9" id="eVJ-YA-xc6"/>
                         <outlet property="resultadoLabel" destination="4pc-DS-9ZB" id="ntJ-SC-6WE"/>
                     </connections>
                 </viewController>
