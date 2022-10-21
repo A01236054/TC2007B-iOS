@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Consejos-para-hacer-imágenes-increíbles.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Consejos-para-hacer-imágenes-increíbles 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Consejos-para-hacer-imágenes-increíbles 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
