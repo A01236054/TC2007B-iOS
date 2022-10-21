@@ -14,11 +14,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var numeroSuperior: UITextField!
     @IBOutlet weak var numeroInferior: UITextField!
     
-    @IBAction func navegarAImagen(_ sender: Any) {
+    func Mostrar(identifier: String) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let imageViewController = storyBoard.instantiateViewController(withIdentifier:  "ImagenViewController")
-        imageViewController.modalPresentationStyle = .fullScreen
-        self.present(imageViewController, animated: true)
+        let viewController = storyBoard.instantiateViewController(withIdentifier:  identifier)
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true)
+    }
+    
+    @IBAction func navegarAImagen(_ sender: Any) {
+        Mostrar(identifier: "ImagenViewController")
+    }
+    
+    
+    @IBAction func mostrarMain(_ sender: Any) {
+        Mostrar(identifier: "MainViewController")
     }
     
     
